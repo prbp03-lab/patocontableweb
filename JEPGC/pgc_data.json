@@ -1,0 +1,25 @@
+
+{
+  "metadata": {
+    "project": "pato-contable",
+    "author": "PatoContable",
+    "legal_owner": "Patricia Rocio Bustos Paco",
+    "timestamp": "2026-01-23T00:00:00Z"
+  },
+  "accounts": {
+    "100": { "definition": "Capital social: Aportaciones de los socios.", "nature": "Acreedora", "statement": "Balance (PN)", "fiscalModel": "Constitución" },
+    "472": { "definition": "H.P. IVA soportado.", "nature": "Deudora", "statement": "Balance (Activo C)", "fiscalModel": "Modelo 303" },
+    "477": { "definition": "H.P. IVA repercutido.", "nature": "Acreedora", "statement": "Balance (Pasivo C)", "fiscalModel": "Modelo 303" },
+    "572": { "definition": "Bancos e instituciones de crédito.", "nature": "Deudora", "statement": "Balance (Activo C)", "fiscalModel": "Tesorería" },
+    "600": { "definition": "Compras de mercaderías.", "nature": "Deudora", "statement": "P&G", "fiscalModel": "Explotación" }
+  },
+  "groups": [
+    { "id": 1, "name": "Financiación Básica", "subgroups": ["10", "11", "17"] },
+    { "id": 2, "name": "Activo no Corriente", "subgroups": ["20", "21", "28"] },
+    { "id": 3, "name": "Existencias", "subgroups": ["30", "31"] },
+    { "id": 4, "name": "Acreedores y Deudores", "subgroups": ["40", "43", "47"] },
+    { "id": 5, "name": "Cuentas Financieras", "subgroups": ["57", "52"] },
+    { "id": 6, "name": "Compras y Gastos", "subgroups": ["60", "62", "64"] },
+    { "id": 7, "name": "Ventas e Ingresos", "subgroups": ["70", "75"] }
+  ]
+}

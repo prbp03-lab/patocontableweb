@@ -1,0 +1,4 @@
+PatoContableWeb/node_modules/
+PatoContableWeb/dist/
+.env
+*.log
