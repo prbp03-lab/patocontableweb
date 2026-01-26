@@ -18,7 +18,7 @@ Si no tienes Node.js instalado, descárgalo desde: https://nodejs.org/
 ### 1. Navegar al directorio del proyecto
 
 ```bash
-cd c:\Users\Toni\Desktop\PATOCONTABLEWEB\PatoContableWeb
+cd c:\Users\Toni\Desktop\pcweb
 ```
 
 ### 2. Instalar dependencias
@@ -70,7 +70,7 @@ Esto te permite ver cómo se verá la aplicación en producción localmente.
 ## 📁 Estructura del Proyecto
 
 ```
-PatoContableWeb/
+pcweb/
 ├── public/              # Assets estáticos
 │   └── img/            # Imágenes, CVs, certificados
 ├── src/

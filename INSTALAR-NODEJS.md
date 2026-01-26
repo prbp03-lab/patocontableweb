@@ -106,7 +106,7 @@ Una vez que Node.js esté instalado correctamente:
 
 1. **En la misma ventana de PowerShell, navega al proyecto:**
    ```powershell
-   cd C:\Users\Toni\Desktop\PATOCONTABLEWEB\PatoContableWeb
+   cd C:\Users\Toni\Desktop\pcweb
    ```
 
 2. **Instala las dependencias:**
@@ -164,7 +164,7 @@ Una vez que Node.js esté instalado correctamente:
 **Solución:**
 1. Asegúrate de estar en la carpeta correcta:
    ```powershell
-   cd C:\Users\Toni\Desktop\PATOCONTABLEWEB\PatoContableWeb
+   cd C:\Users\Toni\Desktop\pcweb
    ```
 2. Verifica que existe el archivo `package.json`:
    ```powershell
@@ -204,7 +204,7 @@ Si después de seguir todos estos pasos sigues teniendo problemas:
    ↓
 5. Verificar: node --version
    ↓
-6. cd C:\Users\Toni\Desktop\PATOCONTABLEWEB\PatoContableWeb
+6. cd C:\Users\Toni\Desktop\pcweb
    ↓
 7. npm install
    ↓

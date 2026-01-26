@@ -30,7 +30,7 @@ npm run preview
 ## 🏗️ Estructura del Proyecto
 
 ```
-PatoContableWeb/
+pcweb/
 ├── public/          # Assets estáticos
 ├── src/
 │   ├── components/  # Componentes React

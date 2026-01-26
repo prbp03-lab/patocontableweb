@@ -1,4 +1,4 @@
-$jsonPath = "PatoContableWeb/src/jepgc/data/quiz_engine.json"
+$jsonPath = "pcweb/src/jepgc/data/quiz_engine.json"
 $content = Get-Content $jsonPath -Raw
 if ($content -notmatch '}\s*$') {
     Write-Output "Fixing JSON closing brace..."
