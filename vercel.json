@@ -1,5 +1,0 @@
-{
-    "buildCommand": "cd PatoContableWeb && npm install && npm run build",
-    "outputDirectory": "PatoContableWeb/dist",
-    "installCommand": "cd PatoContableWeb && npm install"
-}
