@@ -18,6 +18,20 @@ export default {
             title: 'Cómo jugar a PatoContable - PGC España',
             description: 'Información sobre la dinámica del juego, niveles y consejos para aprender contabilidad de forma divertida.',
         },
+        legal: {
+            notice: {
+                title: 'Aviso Legal - PatoContable',
+                description: 'Información legal, titularidad y términos de uso del sitio web PatoContable.',
+            },
+            privacy: {
+                title: 'Política de Privacidad - PatoContable',
+                description: 'Nuestra política sobre el tratamiento de datos y privacidad en PatoContable.',
+            },
+            cookies: {
+                title: 'Política de Cookies - PatoContable',
+                description: 'Información sobre el uso de tecnologías de análisis y cookies en nuestro sitio web.',
+            },
+        },
     },
 
     nav: {
