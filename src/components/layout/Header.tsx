@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                     <span className="logo-icon">
                         <img
                             src="/img/img-pato(2).webp"
-                            alt="Logo"
+                            alt="PatoContable Logo"
                             className="logo-img"
                             fetchPriority="high"
                         />
