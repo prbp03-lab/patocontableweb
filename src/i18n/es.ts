@@ -53,6 +53,10 @@ export default {
             percentage: 'Precisión',
             playAgain: 'Jugar de Nuevo',
         },
+        feedback: {
+            correct: '¡Excelente! Respuesta correcta.',
+            wrong: '¡Casi! Repasa el concepto y sigue intentándolo.',
+        },
     },
 
     // About Page

@@ -53,6 +53,10 @@ export default {
             percentage: 'Precisió',
             playAgain: 'Jugar de Nou',
         },
+        feedback: {
+            correct: '¡Excel·lent! Resposta correcta.',
+            wrong: '¡Gairebé! Repassa el concepte i continua intentant-ho.',
+        },
     },
 
     // About Page
