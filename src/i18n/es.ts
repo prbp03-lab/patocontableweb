@@ -1,5 +1,25 @@
 export default {
     // Navigation
+    // SEO
+    seo: {
+        home: {
+            title: 'PatoContable - Aprende Contabilidad Jugando',
+            description: 'Domina el Plan General Contable con nuestro juego educativo interactivo. Ideal para estudiantes y profesionales de la contabilidad.',
+        },
+        about: {
+            title: 'Sobre Patricia Bustos - PatoContable',
+            description: 'Conoce a la creadora de PatoContable. Profesional con más de 15 años de experiencia en administración y contabilidad.',
+        },
+        tools: {
+            title: 'Herramientas Contables Gratuitas - PatoContable',
+            description: 'Calculadoras y buscadores del PGC para facilitar tu trabajo contable diario.',
+        },
+        gameInfo: {
+            title: 'Cómo jugar a PatoContable - PGC España',
+            description: 'Información sobre la dinámica del juego, niveles y consejos para aprender contabilidad de forma divertida.',
+        },
+    },
+
     nav: {
         home: 'Inicio',
         about: 'Sobre Mí',

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import QuizGame from '../jepgc/components/QuizGame';
 import ResultsScreen from '../jepgc/components/ResultsScreen';
 import './Home.css';
@@ -57,90 +58,96 @@ const Home: React.FC = () => {
     }
 
     return (
-        <div className="home-page">
-            {/* Hero Section */}
-            <section className="hero">
-                <div className="container">
-                    <div className="hero-content">
-                        <div className="hero-badge">
-                            <span className="badge-dot"></span>
-                            {t('home.badge')}
+        <>
+            <Helmet>
+                <title>{t('seo.home.title')}</title>
+                <meta name="description" content={t('seo.home.description')} />
+            </Helmet>
+            <div className="home-container">
+                {/* Hero Section */}
+                <section className="hero">
+                    <div className="container">
+                        <div className="hero-content">
+                            <div className="hero-badge">
+                                <span className="badge-dot"></span>
+                                {t('home.badge')}
+                            </div>
+
+                            <h1 className="hero-title animate-fade-in">
+                                {t('home.title')}
+                            </h1>
+
+                            <p className="hero-subtitle animate-fade-in">
+                                {t('home.subtitle')}
+                            </p>
+
+                            <p className="hero-description animate-fade-in">
+                                {t('home.description')}
+                            </p>
+
+                            <div className="hero-actions animate-fade-in">
+                                <button className="btn-primary btn-large" onClick={handleStartGame}>
+                                    {t('home.playButton')}
+                                </button>
+                                <a href={t('about.cvLink')} download className="btn-outline btn-large">
+                                    <span className="material-symbols-outlined">download</span>
+                                    {t('about.downloadCV')}
+                                </a>
+                                <Link to="/game-info" className="btn-outline btn-large">
+                                    {t('home.learnMore')}
+                                </Link>
+                            </div>
                         </div>
 
-                        <h1 className="hero-title animate-fade-in">
-                            {t('home.title')}
-                        </h1>
-
-                        <p className="hero-subtitle animate-fade-in">
-                            {t('home.subtitle')}
-                        </p>
-
-                        <p className="hero-description animate-fade-in">
-                            {t('home.description')}
-                        </p>
-
-                        <div className="hero-actions animate-fade-in">
-                            <button className="btn-primary btn-large" onClick={handleStartGame}>
-                                {t('home.playButton')}
-                            </button>
-                            <a href={t('about.cvLink')} download className="btn-outline btn-large">
-                                <span className="material-symbols-outlined">download</span>
-                                {t('about.downloadCV')}
-                            </a>
-                            <Link to="/game-info" className="btn-outline btn-large">
-                                {t('home.learnMore')}
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="hero-visual">
-                        <div className="hero-icon">
-                            <img
-                                src="/img/pc.jpeg"
-                                alt="PatoContable"
-                                className="hero-pato-img"
-                                fetchPriority="high"
-                                loading="eager"
-                            />
-                        </div>
-                        <div className="hero-glow"></div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Features Section */}
-            <section className="features">
-                <div className="container">
-                    <h2 className="section-title">{t('home.features.title')}</h2>
-
-                    <div className="features-grid">
-                        <div className="feature-card glass-card">
-                            <div className="feature-icon">🎯</div>
-                            <h3 className="feature-title">{t('home.features.interactive.title')}</h3>
-                            <p className="feature-description">{t('home.features.interactive.description')}</p>
-                        </div>
-
-                        <div className="feature-card glass-card">
-                            <div className="feature-icon">📊</div>
-                            <h3 className="feature-title">{t('home.features.levels.title')}</h3>
-                            <p className="feature-description">{t('home.features.levels.description')}</p>
-                        </div>
-
-                        <div className="feature-card glass-card">
-                            <div className="feature-icon">⚡</div>
-                            <h3 className="feature-title">{t('home.features.realTime.title')}</h3>
-                            <p className="feature-description">{t('home.features.realTime.description')}</p>
-                        </div>
-
-                        <div className="feature-card glass-card">
-                            <div className="feature-icon">📚</div>
-                            <h3 className="feature-title">{t('home.features.comprehensive.title')}</h3>
-                            <p className="feature-description">{t('home.features.comprehensive.description')}</p>
+                        <div className="hero-visual">
+                            <div className="hero-icon">
+                                <img
+                                    src="/img/pc.jpeg"
+                                    alt="PatoContable"
+                                    className="hero-pato-img"
+                                    fetchPriority="high"
+                                    loading="eager"
+                                />
+                            </div>
+                            <div className="hero-glow"></div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
+                </section>
+
+                {/* Features Section */}
+                <section className="features">
+                    <div className="container">
+                        <h2 className="section-title">{t('home.features.title')}</h2>
+
+                        <div className="features-grid">
+                            <div className="feature-card glass-card">
+                                <div className="feature-icon">🎯</div>
+                                <h3 className="feature-title">{t('home.features.interactive.title')}</h3>
+                                <p className="feature-description">{t('home.features.interactive.description')}</p>
+                            </div>
+
+                            <div className="feature-card glass-card">
+                                <div className="feature-icon">📊</div>
+                                <h3 className="feature-title">{t('home.features.levels.title')}</h3>
+                                <p className="feature-description">{t('home.features.levels.description')}</p>
+                            </div>
+
+                            <div className="feature-card glass-card">
+                                <div className="feature-icon">⚡</div>
+                                <h3 className="feature-title">{t('home.features.realTime.title')}</h3>
+                                <p className="feature-description">{t('home.features.realTime.description')}</p>
+                            </div>
+
+                            <div className="feature-card glass-card">
+                                <div className="feature-icon">📚</div>
+                                <h3 className="feature-title">{t('home.features.comprehensive.title')}</h3>
+                                <p className="feature-description">{t('home.features.comprehensive.description')}</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </>
     );
 };
 

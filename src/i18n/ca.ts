@@ -1,5 +1,25 @@
 export default {
     // Navigation
+    // SEO
+    seo: {
+        home: {
+            title: 'PatoContable - Aprèn Comptabilitat Jugant',
+            description: 'Domina el Pla General Comptable amb el nostre joc educatiu interactiu. Ideal per a estudiants i professionals de la comptabilitat.',
+        },
+        about: {
+            title: 'Sobre Patricia Bustos - PatoContable',
+            description: 'Coneix la creadora de PatoContable. Professional amb més de 15 anys d\'experiència en administració i comptabilitat.',
+        },
+        tools: {
+            title: 'Eines Comptables Gratuïtes - PatoContable',
+            description: 'Calculadores i cercadors del PGC per facilitar la teva feina comptable diària.',
+        },
+        gameInfo: {
+            title: 'Com jugar a PatoContable - PGC Espanya',
+            description: 'Informació sobre la dinàmica del joc, nivells i consells per aprendre comptabilitat de forma divertida.',
+        },
+    },
+
     nav: {
         home: 'Inici',
         about: 'Sobre Mi',
