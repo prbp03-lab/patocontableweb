@@ -1,6 +1,7 @@
 # PatoContable Web
 
-Web moderna y bilingüe (ES/CA) para el juego educativo PatoContable, con herramientas completas del Plan General Contable y calendario fiscal.
+Web moderna y bilingüe (ES/CA) para el juego educativo PatoContable. 
+Disponible en: [www.patocontable.com](https://www.patocontable.com)
 
 ## 🚀 Características
 
