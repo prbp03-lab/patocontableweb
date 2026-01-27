@@ -243,8 +243,26 @@ select {
     }
 }
 
+@keyframes delayedFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .animate-fade-in {
     animation: fadeIn 0.5s ease-out;
+}
+
+.animate-delayed-fade-in {
+    animation: delayedFadeIn 0.8s ease-in-out forwards;
 }
 
 .animate-slide-in {
