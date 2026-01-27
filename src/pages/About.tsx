@@ -33,7 +33,13 @@ const About: React.FC = () => {
 
                     <div className="about-hero-image">
                         <div className="profile-image-wrapper">
-                            <img src="/img/perfil_patricia.png" alt="Patricia Bustos" className="profile-image" />
+                            <img
+                                src="/img/perfil_patricia.png"
+                                alt="Patricia Bustos"
+                                className="profile-image"
+                                loading="lazy"
+                                decoding="async"
+                            />
                             <div className="profile-glow"></div>
                         </div>
                     </div>

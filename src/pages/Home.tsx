@@ -91,7 +91,13 @@ const Home: React.FC = () => {
 
                     <div className="hero-visual">
                         <div className="hero-icon">
-                            <img src="/img/pc.jpeg" alt="PatoContable" className="hero-pato-img" />
+                            <img
+                                src="/img/pc.jpeg"
+                                alt="PatoContable"
+                                className="hero-pato-img"
+                                fetchPriority="high"
+                                loading="eager"
+                            />
                         </div>
                         <div className="hero-glow"></div>
                     </div>
