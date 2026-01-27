@@ -246,11 +246,64 @@ export default {
         },
     },
 
+    // Legal Pages
+    legal: {
+        notice: {
+            title: 'AVÍS LEGAL',
+            id: {
+                title: 'Dades identificatives',
+                content: 'En compliment amb el deure d\'informació recollit en l\'article 10 de la Llei 34/2002, d\'11 de juliol, de Serveis de la Societat de la Informació i del Comerç Electrònic (LSSI-CE), es faciliten les següents dades:',
+                owner_label: 'Titular',
+                name_label: 'Nom comercial',
+                address_label: 'Domicili',
+                email_label: 'Email de contacte',
+                web_label: 'Lloc Web',
+            },
+            property: {
+                title: 'Propietat Intel·lectual',
+                content: 'Els continguts (textos, logotips i imatges com el "Pato") i el software educatiu són propietat de la titular. Queda prohibida la reproducció total o parcial sense autorització prèvia.',
+            },
+        },
+        privacy: {
+            title: 'POLÍTICA DE PRIVACITAT',
+            intro: 'A Pato Contable ens prenem molt seriosament la teva privacitat.',
+            collection: {
+                title: 'Recollida de dades',
+                content: 'Aquest lloc web no recull ni emmagatzema dades personals dels usuaris (noms, correus o telèfons). No disposem de formularis de registre ni de contacte integrats que emmagatzemin informació en bases de dades.',
+            },
+            purpose: {
+                title: 'Finalitat',
+                content: 'El lloc és purament educatiu i informatiu.',
+            },
+            rights: {
+                title: 'Drets',
+                content: 'Tot i que no tractem les teves dades, pots contactar amb el titular a patocontable@outlook.com per a qualsevol dubte sobre la teva privacitat.',
+            },
+        },
+        cookies: {
+            title: 'POLÍTICA DE COOKIES',
+            intro: 'Aquest lloc web utilitza tecnologies d\'anàlisi per entendre com interactuen els usuaris amb el contingut.',
+            analytics: {
+                title: 'Vercel Analytics',
+                content: 'Utilitzem l\'eina d\'anàlisi del nostre proveïdor d\'allotjament (Vercel Inc.). Aquesta eina no utilitza cookies de rastreig personal ni emmagatzema adreces IP completes. Totes les dades són anònimes i agregades (per exemple: "10 persones han jugat al nivell 1"), la qual cosa ens ajuda a millorar el joc.',
+            },
+            management: {
+                title: 'Gestió de Cookies',
+                content: 'En no utilitzar cookies publicitàries ni de seguiment individual, no es requereix un banner de consentiment complex, però pots configurar el teu navegador per bloquejar qualsevol intent d\'emmagatzematge si ho desitges.',
+            },
+        },
+    },
+
     // Footer
     footer: {
         rights: 'Tots els drets reservats',
         gameRegistered: 'Joc Educatiu registrat a SafeCreative',
         location: 'Granollers, Barcelona',
+        legal: {
+            notice: 'Avís Legal',
+            privacy: 'Privacitat',
+            cookies: 'Cookies',
+        },
     },
 
     // Common

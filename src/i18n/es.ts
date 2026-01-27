@@ -246,11 +246,64 @@ export default {
         },
     },
 
+    // Legal Pages
+    legal: {
+        notice: {
+            title: 'AVISO LEGAL',
+            id: {
+                title: 'Datos identificativos',
+                content: 'En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos:',
+                owner_label: 'Titular',
+                name_label: 'Nombre comercial',
+                address_label: 'Domicilio',
+                email_label: 'Email de contacto',
+                web_label: 'Sitio Web',
+            },
+            property: {
+                title: 'Propiedad Intelectual',
+                content: 'Los contenidos (textos, logotipos e imágenes como el "Pato") y el software educativo son propiedad de la titular. Queda prohibida la reproducción total o parcial sin autorización previa.',
+            },
+        },
+        privacy: {
+            title: 'POLÍTICA DE PRIVACIDAD',
+            intro: 'En Pato Contable nos tomamos muy en serio tu privacidad.',
+            collection: {
+                title: 'Recogida de datos',
+                content: 'Este sitio web no recoge ni almacena datos personales de los usuarios (nombres, correos o teléfonos). No disponemos de formularios de registro ni de contacto integrados que almacenen información en bases de datos.',
+            },
+            purpose: {
+                title: 'Finalidad',
+                content: 'El sitio es puramente educativo e informativo.',
+            },
+            rights: {
+                title: 'Derechos',
+                content: 'Aunque no tratamos tus datos, puedes contactar con el titular en patocontable@outlook.com para cualquier duda sobre tu privacidad.',
+            },
+        },
+        cookies: {
+            title: 'POLÍTICA DE COOKIES',
+            intro: 'Este sitio web utiliza tecnologías de análisis para entender cómo interactúan los usuarios con el contenido.',
+            analytics: {
+                title: 'Vercel Analytics',
+                content: 'Utilizamos la herramienta de análisis de nuestro proveedor de alojamiento (Vercel Inc.). Esta herramienta no utiliza cookies de rastreo personal ni almacena direcciones IP completas. Todos los datos son anónimos y agregados (por ejemplo: "10 personas han jugado al nivel 1"), lo que nos ayuda a mejorar el juego.',
+            },
+            management: {
+                title: 'Gestión de Cookies',
+                content: 'Al no utilizar cookies publicitarias ni de seguimiento individual, no se requiere un banner de consentimiento complejo, pero puedes configurar tu navegador para bloquear cualquier intento de almacenamiento si lo deseas.',
+            },
+        },
+    },
+
     // Footer
     footer: {
         rights: 'Todos los derechos reservados',
         gameRegistered: 'Juego Educativo registrado en SafeCreative',
         location: 'Granollers, Barcelona',
+        legal: {
+            notice: 'Aviso Legal',
+            privacy: 'Privacidad',
+            cookies: 'Cookies',
+        },
     },
 
     // Common

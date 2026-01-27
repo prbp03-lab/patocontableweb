@@ -11,6 +11,9 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Tools = lazy(() => import('./pages/Tools'));
 const GameInfo = lazy(() => import('./pages/GameInfo'));
+const LegalNotice = lazy(() => import('./pages/legal/LegalNotice'));
+const PrivacyPolicy = lazy(() => import('./pages/legal/PrivacyPolicy'));
+const CookiesPolicy = lazy(() => import('./pages/legal/CookiesPolicy'));
 
 const App: React.FC = () => {
     return (
@@ -24,6 +27,9 @@ const App: React.FC = () => {
                             <Route path="/about" element={<About />} />
                             <Route path="/tools" element={<Tools />} />
                             <Route path="/game-info" element={<GameInfo />} />
+                            <Route path="/aviso-legal" element={<LegalNotice />} />
+                            <Route path="/privacidad" element={<PrivacyPolicy />} />
+                            <Route path="/cookies" element={<CookiesPolicy />} />
                             <Route path="*" element={<Navigate to="/" replace />} />
                         </Routes>
                     </Suspense>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -52,10 +53,15 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="footer-bottom">
-                <div className="container">
+                <div className="container footer-bottom-content">
                     <p className="footer-copyright">
                         © {currentYear} PatoContable • {t('footer.rights')}
                     </p>
+                    <div className="footer-legal-links">
+                        <Link to="/aviso-legal" className="footer-legal-link">{t('footer.legal.notice')}</Link>
+                        <Link to="/privacidad" className="footer-legal-link">{t('footer.legal.privacy')}</Link>
+                        <Link to="/cookies" className="footer-legal-link">{t('footer.legal.cookies')}</Link>
+                    </div>
                 </div>
             </div>
         </footer>
