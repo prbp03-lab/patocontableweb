@@ -59,8 +59,19 @@
 }
 
 .level-icon {
-    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
     margin-bottom: 1rem;
+}
+
+.level-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(13, 147, 242, 0.3);
 }
 
 .level-name {

@@ -11,7 +11,9 @@ const Footer: React.FC = () => {
             <div className="container footer-content">
                 <div className="footer-section">
                     <div className="footer-logo">
-                        <span className="footer-logo-icon">🦆</span>
+                        <span className="footer-logo-icon">
+                            <img src="/img/Pato.jpeg" alt="Pato Logo" className="footer-logo-img" />
+                        </span>
                         <span className="footer-logo-text">PatoContable</span>
                     </div>
                     <p className="footer-tagline">

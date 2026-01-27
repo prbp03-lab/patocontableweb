@@ -90,7 +90,9 @@ const Home: React.FC = () => {
                     </div>
 
                     <div className="hero-visual">
-                        <div className="hero-icon">🦆</div>
+                        <div className="hero-icon">
+                            <img src="/img/pc.jpeg" alt="PatoContable" className="hero-pato-img" />
+                        </div>
                         <div className="hero-glow"></div>
                     </div>
                 </div>

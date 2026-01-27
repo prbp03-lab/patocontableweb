@@ -37,8 +37,17 @@
 }
 
 .logo-icon {
-    font-size: var(--text-3xl);
-    filter: drop-shadow(0 2px 4px rgba(13, 147, 242, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
 }
 
 .logo-text {

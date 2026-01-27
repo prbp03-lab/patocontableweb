@@ -22,7 +22,9 @@ const Header: React.FC = () => {
         <header className="header">
             <div className="container header-content">
                 <Link to="/" className="logo">
-                    <span className="logo-icon">🦆</span>
+                    <span className="logo-icon">
+                        <img src="/img/Pato.jpeg" alt="Logo" className="logo-img" />
+                    </span>
                     <span className="logo-text">
                         PATO<span className="logo-highlight">CONTABLE</span>
                     </span>

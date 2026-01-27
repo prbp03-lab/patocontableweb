@@ -30,8 +30,17 @@
 }
 
 .footer-logo-icon {
-    font-size: var(--text-2xl);
-    filter: drop-shadow(0 2px 4px rgba(13, 147, 242, 0.3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
 }
 
 .footer-logo-text {
