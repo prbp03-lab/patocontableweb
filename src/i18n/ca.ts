@@ -40,7 +40,6 @@ export default {
     game: {
         selectLevel: 'Selecciona el teu Nivell',
         question: 'Pregunta',
-        finish: 'Finalitzar Joc',
         next: 'Següent Pregunta',
         difficulty: {
             easy: 'Conceptes Bàsics',
@@ -52,6 +51,7 @@ export default {
             correct: 'Respostes Correctes',
             percentage: 'Precisió',
             playAgain: 'Jugar de Nou',
+            finish: 'Finalitzar Joc',
         },
         feedback: {
             correct: '¡Excel·lent! Resposta correcta.',
