@@ -124,7 +124,7 @@ export default {
         },
         contact: {
             title: 'Contacta amb mi',
-            email: 'patriadmconta@outlook.com',
+            email: 'patocontable@outlook.com',
             location: 'Granollers, 08402 • Barcelona',
             linkedin: 'LinkedIn',
         },
