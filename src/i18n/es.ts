@@ -62,6 +62,7 @@ export default {
         subtitle: 'Administrativa Contable & Especialista en IA',
         description: 'Soy una profesional administrativa con más de 15 años de experiencia en gestión contable y atención al cliente. Especializada en sistemas ERP (SAGE, SAP, Dynamics 365) e IA.',
         downloadCV: 'Descargar CV',
+        cvLink: '/img/CV_Patricia_ES.pdf',
         experience: {
             title: 'Experiencia Profesional',
             items: [

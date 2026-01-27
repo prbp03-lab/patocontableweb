@@ -20,13 +20,9 @@ const About: React.FC = () => {
                         <p className="about-description">{t('about.description')}</p>
 
                         <div className="cv-buttons">
-                            <a href="/img/CV_Patricia_ES.pdf" download className="btn-primary">
+                            <a href={t('about.cvLink')} download className="btn-primary">
                                 <span className="material-symbols-outlined">download</span>
-                                {t('about.downloadCV')} (ES)
-                            </a>
-                            <a href="/img/CV_Patricia_CA.pdf" download className="btn-outline">
-                                <span className="material-symbols-outlined">download</span>
-                                {t('about.downloadCV')} (CA)
+                                {t('about.downloadCV')}
                             </a>
                         </div>
                     </div>

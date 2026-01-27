@@ -83,6 +83,10 @@ const Home: React.FC = () => {
                             <button className="btn-primary btn-large" onClick={handleStartGame}>
                                 {t('home.playButton')}
                             </button>
+                            <a href={t('about.cvLink')} download className="btn-outline btn-large">
+                                <span className="material-symbols-outlined">download</span>
+                                {t('about.downloadCV')}
+                            </a>
                             <Link to="/game-info" className="btn-outline btn-large">
                                 {t('home.learnMore')}
                             </Link>
