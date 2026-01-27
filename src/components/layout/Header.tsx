@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                 <Link to="/" className="logo">
                     <span className="logo-icon">
                         <img
-                            src="/img/bb.jpeg"
+                            src="/img/img-pato-hf.webp"
                             alt="Logo"
                             className="logo-img"
                             fetchPriority="high"

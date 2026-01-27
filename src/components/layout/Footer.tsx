@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                 <div className="footer-section">
                     <div className="footer-logo">
                         <span className="footer-logo-icon">
-                            <img src="/img/bb.jpeg" alt="Pato Logo" className="footer-logo-img" />
+                            <img src="/img/img-pato-hf.webp" alt="Pato Logo" className="footer-logo-img" />
                         </span>
                         <span className="footer-logo-text">PatoContable</span>
                     </div>
