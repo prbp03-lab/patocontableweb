@@ -111,10 +111,10 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                 <div className="game-stats">
                     <span className="stat-item">XP: {score}</span>
                 </div>
-                <button className="game-cancel-btn" onClick={onCancel} title={t('common.cancel')}>
-                    ✕
-                </button>
             </div>
+            <button className="game-cancel-btn" onClick={onCancel} title={t('common.cancel')}>
+                ✕
+            </button>
 
             <QuestionCard
                 question={questionText}
