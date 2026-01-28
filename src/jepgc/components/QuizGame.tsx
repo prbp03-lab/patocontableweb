@@ -55,6 +55,16 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
         }
     };
 
+    const resetLevel = () => {
+        setLevel(null);
+        setQuestions([]);
+        setCurrentIndex(0);
+        setScore(0);
+        setCorrectCount(0);
+        setSelectedOption(null);
+        setShowExplanation(false);
+    };
+
     if (!level) {
         return (
             <div className="game-lobby">
@@ -112,9 +122,6 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                     <span className="stat-item">XP: {score}</span>
                 </div>
             </div>
-            <button className="game-cancel-btn" onClick={onCancel} title={t('common.cancel')}>
-                ✕
-            </button>
 
             <QuestionCard
                 question={questionText}
@@ -136,6 +143,10 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                     </button>
                 </div>
             )}
+
+            <button className="game-cancel-btn" onClick={resetLevel} title={t('common.cancel')}>
+                ✕
+            </button>
         </div>
     );
 };
