@@ -104,6 +104,7 @@
     position: relative;
 }
 
+/* Cancel button positioned below XP stats */
 .game-cancel-btn {
     position: absolute;
     bottom: 0;
