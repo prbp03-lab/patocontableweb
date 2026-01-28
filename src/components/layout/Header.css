@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: var(--spacing-md);
-    padding-bottom: var(--spacing-md);
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
     gap: var(--spacing-lg);
 }
 
@@ -24,7 +24,7 @@
     align-items: center;
     gap: var(--spacing-sm);
     font-family: var(--font-heading);
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
     font-weight: 800;
     letter-spacing: -0.025em;
     color: var(--text-color);
@@ -43,8 +43,8 @@
 }
 
 .logo-img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--primary);
@@ -159,8 +159,9 @@
         font-size: var(--text-lg);
     }
 
-    .logo-icon {
-        font-size: var(--text-2xl);
+    .logo-img {
+        width: 40px;
+        height: 40px;
     }
 }
 

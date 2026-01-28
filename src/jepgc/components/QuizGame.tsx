@@ -60,31 +60,43 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
             <div className="game-lobby">
                 <h2 className="lobby-title">{t('game.selectLevel')}</h2>
                 <div className="level-grid">
-                    <button className="level-card junior" onClick={() => startLevel(Level.JUNIOR)}>
-                        <span className="level-icon">
-                            <img src="/img/logo-pato-nuevo.webp" alt="Junior" className="level-img" />
-                        </span>
-                        <span className="level-name">Junior</span>
-                        <span className="level-desc">{t('game.difficulty.easy')}</span>
-                    </button>
-                    <button className="level-card senior" onClick={() => startLevel(Level.SENIOR)}>
-                        <span className="level-icon">
-                            <img src="/img/logo-pato-nuevo.webp" alt="Senior" className="level-img" />
-                        </span>
-                        <span className="level-name">Senior</span>
-                        <span className="level-desc">{t('game.difficulty.medium')}</span>
-                    </button>
-                    <button className="level-card executive" onClick={() => startLevel(Level.EXECUTIVE)}>
-                        <span className="level-icon">
-                            <img src="/img/logo-pato-nuevo.webp" alt="Executive" className="level-img" />
-                        </span>
-                        <span className="level-name">Executive</span>
-                        <span className="level-desc">{t('game.difficulty.hard')}</span>
-                    </button>
+                    <div className="level-card-wrapper">
+                        <button className="level-card junior" onClick={() => startLevel(Level.JUNIOR)}>
+                            <span className="level-icon">
+                                <img src="/img/logo-pato-nuevo.webp" alt="Junior" className="level-img" />
+                            </span>
+                            <span className="level-name">Junior</span>
+                            <span className="level-desc">{t('game.difficulty.easy')}</span>
+                        </button>
+                        <button className="level-cancel-btn" onClick={onCancel}>
+                            {t('common.cancel')}
+                        </button>
+                    </div>
+                    <div className="level-card-wrapper">
+                        <button className="level-card senior" onClick={() => startLevel(Level.SENIOR)}>
+                            <span className="level-icon">
+                                <img src="/img/logo-pato-nuevo.webp" alt="Senior" className="level-img" />
+                            </span>
+                            <span className="level-name">Senior</span>
+                            <span className="level-desc">{t('game.difficulty.medium')}</span>
+                        </button>
+                        <button className="level-cancel-btn" onClick={onCancel}>
+                            {t('common.cancel')}
+                        </button>
+                    </div>
+                    <div className="level-card-wrapper">
+                        <button className="level-card executive" onClick={() => startLevel(Level.EXECUTIVE)}>
+                            <span className="level-icon">
+                                <img src="/img/logo-pato-nuevo.webp" alt="Executive" className="level-img" />
+                            </span>
+                            <span className="level-name">Executive</span>
+                            <span className="level-desc">{t('game.difficulty.hard')}</span>
+                        </button>
+                        <button className="level-cancel-btn" onClick={onCancel}>
+                            {t('common.cancel')}
+                        </button>
+                    </div>
                 </div>
-                <button className="btn-text mt-8" onClick={onCancel}>
-                    {t('common.cancel')}
-                </button>
             </div>
         );
     }
