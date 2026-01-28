@@ -69,7 +69,7 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                     </button>
                     <button className="level-card senior" onClick={() => startLevel(Level.SENIOR)}>
                         <span className="level-icon">
-                            <img src="/img/img-pato(2).webp" alt="Senior" className="level-img" />
+                            <img src="/img/img-contable.webp" alt="Senior" className="level-img" />
                         </span>
                         <span className="level-name">Senior</span>
                         <span className="level-desc">{t('game.difficulty.medium')}</span>
