@@ -8,6 +8,7 @@ interface QuestionCardProps {
     correctAnswer: number;
     onSelectOption: (index: number) => void;
     disabled: boolean;
+    hint?: string;
 }
 
 const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -16,7 +17,8 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     selectedOption,
     correctAnswer,
     onSelectOption,
-    disabled
+    disabled,
+    hint
 }) => {
     return (
         <div className="question-card">
@@ -43,6 +45,12 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                     );
                 })}
             </div>
+            {hint && selectedOption === null && (
+                <div className="hint-section">
+                    <span className="hint-icon">💡</span>
+                    <span className="hint-text">{hint}</span>
+                </div>
+            )}
         </div>
     );
 };

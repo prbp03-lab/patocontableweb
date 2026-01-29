@@ -13,6 +13,8 @@ export interface Question {
     correctAnswer: number;
     explanation: string;
     explanationCA?: string;
+    hint?: string;
+    hintCA?: string;
     points: number;
     category: string;
 }

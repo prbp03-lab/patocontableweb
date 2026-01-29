@@ -1,9 +1,9 @@
 {
   "project": "pato-contable",
   "metadata": {
-    "version": "2.0",
+    "version": "2.1",
     "total_questions": 118,
-    "description": "Banco completo de preguntas de contabilidad basado en el PGC español"
+    "description": "Banco completo de preguntas de contabilidad basado en el PGC español con sistema de pistas"
   },
   "levels": {
     "1": [
@@ -24,7 +24,9 @@
           "Grup 5: Comptes financers"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 2 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 2 al PGC?"
       },
       {
         "id": "f2",
@@ -43,7 +45,9 @@
           "No té naturalesa definida"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Cuando compras a crédito, ¿aumenta tu obligación de pago? Piensa en qué lado del asiento se refleja.",
+        "hintCA": "Quan compres a crèdit, augmenta la teva obligació de pagament? Pensa en quin costat de l'assentament es reflecteix."
       },
       {
         "id": "f3",
@@ -62,7 +66,9 @@
           "(218) Elements de transport"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Observa los códigos: ¿cuál empieza por 6 o 7? Esos grupos tienen algo especial.",
+        "hintCA": "Observa els codis: quin comença per 6 o 7? Aquests grups tenen alguna cosa especial."
       },
       {
         "id": "f4",
@@ -81,7 +87,9 @@
           "Grup 3"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 7 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 7 al PGC?"
       },
       {
         "id": "f5",
@@ -100,7 +108,9 @@
           "Naturalesa de Patrimoni"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Las cuentas de gasto pertenecen al Grupo 6. ¿Cómo se comportan estas cuentas?",
+        "hintCA": "Els comptes de despesa pertanyen al Grup 6. Com es comporten aquests comptes?"
       },
       {
         "id": "f6",
@@ -119,7 +129,9 @@
           "(430) Clients"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "¿Cuál de estos elementos no necesita ninguna transformación para ser utilizado como medio de pago?",
+        "hintCA": "Quin d'aquests elements no necessita cap transformació per ser utilitzat com a mitjà de pagament?"
       },
       {
         "id": "f7",
@@ -138,7 +150,9 @@
           "Actiu"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 1 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 1 al PGC?"
       },
       {
         "id": "f8",
@@ -157,7 +171,9 @@
           "Un ingrés financer"
         ],
         "answer": 0,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "f9",
@@ -176,7 +192,9 @@
           "Grup 2"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "f10",
@@ -195,7 +213,9 @@
           "Representar un deute"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Esta cuenta no aumenta el valor del activo, sino que lo corrige. ¿En qué sentido?",
+        "hintCA": "Aquest compte no augmenta el valor de l'actiu, sinó que el corregeix. En quin sentit?"
       },
       {
         "id": "n1",
@@ -214,7 +234,9 @@
           "Grup 2: Actiu No Corrent"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 6 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 6 al PGC?"
       },
       {
         "id": "n2",
@@ -233,7 +255,9 @@
           "Comptes de Tresoreria"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Observa el código de la cuenta. El primer dígito te indica el grupo al que pertenece.",
+        "hintCA": "Observa el codi del compte. El primer dígit t'indica el grup al qual pertany."
       },
       {
         "id": "n3",
@@ -252,7 +276,9 @@
           "Grup 4: Creditors i deutors"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n4",
@@ -271,7 +297,9 @@
           "Naturalesa de Despesa"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Piensa si esta cuenta representa algo que tienes (activo), algo que debes (pasivo) o un gasto/ingreso.",
+        "hintCA": "Pensa si aquest compte representa alguna cosa que tens (actiu), alguna cosa que deus (passiu) o una despesa/ingrés."
       },
       {
         "id": "n5",
@@ -290,7 +318,9 @@
           "Grup 5: Comptes financers"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 4 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 4 al PGC?"
       },
       {
         "id": "n6",
@@ -309,7 +339,9 @@
           "(681) Amortització de l'immobilitzat"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n7",
@@ -328,7 +360,9 @@
           "Ingrés"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n8",
@@ -347,7 +381,9 @@
           "Grup 2: Actiu No Corrent"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 5 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 5 al PGC?"
       },
       {
         "id": "n9",
@@ -366,7 +402,9 @@
           "Cap"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n10",
@@ -385,7 +423,9 @@
           "És un compte de Despesa"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Piensa si esta cuenta representa algo que tienes (activo), algo que debes (pasivo) o un gasto/ingreso.",
+        "hintCA": "Pensa si aquest compte representa alguna cosa que tens (actiu), alguna cosa que deus (passiu) o una despesa/ingrés."
       },
       {
         "id": "n11",
@@ -404,7 +444,9 @@
           "Grup 5: Comptes financers"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 4 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 4 al PGC?"
       },
       {
         "id": "n12",
@@ -423,7 +465,9 @@
           "Un Ingrés"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n13",
@@ -442,7 +486,9 @@
           "No té naturalesa"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Piensa si esta cuenta representa algo que tienes (activo), algo que debes (pasivo) o un gasto/ingreso.",
+        "hintCA": "Pensa si aquest compte representa alguna cosa que tens (actiu), alguna cosa que deus (passiu) o una despesa/ingrés."
       },
       {
         "id": "n14",
@@ -461,7 +507,9 @@
           "Grup 4: Creditors i deutors"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 7 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 7 al PGC?"
       },
       {
         "id": "n15",
@@ -480,7 +528,9 @@
           "Compte de Patrimoni Net Directe"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n16",
@@ -499,7 +549,9 @@
           "Grup 6: Compres i despeses"
         ],
         "answer": 3,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 6 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 6 al PGC?"
       },
       {
         "id": "n17",
@@ -518,7 +570,9 @@
           "(438) Bestretes de clients"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n18",
@@ -537,7 +591,9 @@
           "Grup 5: Comptes financers"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 2 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 2 al PGC?"
       },
       {
         "id": "n19",
@@ -556,7 +612,9 @@
           "Una Despesa"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "n20",
@@ -575,7 +633,9 @@
           "(520) Deutes a curt termini"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Observa los códigos: ¿cuál empieza por 6 o 7? Esos grupos tienen algo especial.",
+        "hintCA": "Observa els codis: quin comença per 6 o 7? Aquests grups tenen alguna cosa especial."
       },
       {
         "id": "q1",
@@ -594,7 +654,9 @@
           "(4750) H.P., credora per IVA"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "q2",
@@ -613,7 +675,9 @@
           "(477) H.P., IVA repercutit"
         ],
         "answer": 0,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "q3",
@@ -632,7 +696,9 @@
           "(476) Organismes de la S.S. creditors"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "q4",
@@ -651,7 +717,9 @@
           "(472) H.P., IVA suportat"
         ],
         "answer": 1,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "q5",
@@ -670,7 +738,9 @@
           "(621) Arrendaments i cànons"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
+        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
       },
       {
         "id": "q6",
@@ -689,7 +759,9 @@
           "Grup 2: Actiu No Corrent"
         ],
         "answer": 2,
-        "points": 20
+        "points": 20,
+        "hint": "El primer dígito del código contable indica el grupo. ¿Qué representa el número 3 en el PGC?",
+        "hintCA": "El primer dígit del codi comptable indica el grup. Què representa el número 3 al PGC?"
       },
       {
         "id": "q7",
@@ -708,7 +780,9 @@
           "És un compte de resultat"
         ],
         "answer": 0,
-        "points": 20
+        "points": 20,
+        "hint": "¿Los clientes te deben dinero o tú les debes a ellos? Los derechos de cobro tienen una naturaleza específica.",
+        "hintCA": "Els clients et deuen diners o tu els deus a ells? Els drets de cobrament tenen una naturalesa específica."
       }
     ],
     "2": [
@@ -729,7 +803,9 @@
           "No es veu afectada"
         ],
         "answer": 1,
-        "points": 30
+        "points": 30,
+        "hint": "¿Entra o sale dinero del banco? Recuerda la regla básica de las cuentas de activo.",
+        "hintCA": "Entra o surt diners del banc? Recorda la regla bàsica dels comptes d'actiu."
       },
       {
         "id": "m2",
@@ -748,7 +824,9 @@
           "Disminueix (Deure)"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "¿Se crea o se cancela un derecho de cobro? ¿Qué tipo de cuenta es Clientes?",
+        "hintCA": "Es crea o es cancel·la un dret de cobrament? Quin tipus de compte és Clients?"
       },
       {
         "id": "m3",
@@ -767,7 +845,9 @@
           "Disminueix la despesa (Deure)"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "¿Aumenta o disminuye el gasto? Observa que es una cuenta del grupo 6.",
+        "hintCA": "Augmenta o disminueix la despesa? Observa que és un compte del grup 6."
       },
       {
         "id": "m4",
@@ -786,7 +866,9 @@
           "No es veu afectada"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "¿La obligación de pago aumenta o disminuye? Piensa en la naturaleza de esta cuenta.",
+        "hintCA": "L'obligació de pagament augmenta o disminueix? Pensa en la naturalesa d'aquest compte."
       },
       {
         "id": "m5",
@@ -805,7 +887,9 @@
           "No es veu afectada"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Al pagar, ¿tu deuda sube o baja? Aplica la lógica inversa a cuando compras.",
+        "hintCA": "En pagar, el teu deute puja o baixa? Aplica la lògica inversa a quan compres."
       },
       {
         "id": "m6",
@@ -824,7 +908,9 @@
           "Disminueix (Haver)"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "¿El patrimonio neto aumenta o disminuye? Las cuentas del grupo 1 tienen naturaleza acreedora.",
+        "hintCA": "El patrimoni net augmenta o disminueix? Els comptes del grup 1 tenen naturalesa credora."
       },
       {
         "id": "m7",
@@ -843,7 +929,9 @@
           "Augmenta (Deure)"
         ],
         "answer": 3,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "m8",
@@ -862,7 +950,9 @@
           "Disminueix (Haver)"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Esta cuenta acumula la depreciación del activo. ¿Aumenta o disminuye con el tiempo?",
+        "hintCA": "Aquest compte acumula la depreciació de l'actiu. Augmenta o disminueix amb el temps?"
       },
       {
         "id": "m9",
@@ -881,7 +971,9 @@
           "És un passiu"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "¿Entra o sale dinero del banco? Recuerda la regla básica de las cuentas de activo.",
+        "hintCA": "Entra o surt diners del banc? Recorda la regla bàsica dels comptes d'actiu."
       },
       {
         "id": "m10",
@@ -900,7 +992,9 @@
           "Disminueix el seu saldo (Haver)"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o1",
@@ -919,7 +1013,9 @@
           "L'ingrés disminueix (Haver)"
         ],
         "answer": 1,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o2",
@@ -938,7 +1034,9 @@
           "Disminueix el seu saldo (Haver)"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o3",
@@ -957,7 +1055,9 @@
           "No es veu afectada"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o4",
@@ -976,7 +1076,9 @@
           "Disminueix (Haver)"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Esta cuenta acumula la depreciación del activo. ¿Aumenta o disminuye con el tiempo?",
+        "hintCA": "Aquest compte acumula la depreciació de l'actiu. Augmenta o disminueix amb el temps?"
       },
       {
         "id": "o5",
@@ -995,7 +1097,9 @@
           "Disminueix el seu saldo (Deure)"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "¿La obligación de pago aumenta o disminuye? Piensa en la naturaleza de esta cuenta.",
+        "hintCA": "L'obligació de pagament augmenta o disminueix? Pensa en la naturalesa d'aquest compte."
       },
       {
         "id": "o6",
@@ -1014,7 +1118,9 @@
           "Disminueix (Deure)"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o7",
@@ -1033,7 +1139,9 @@
           "És un passiu financer"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "¿Entra o sale dinero del banco? Recuerda la regla básica de las cuentas de activo.",
+        "hintCA": "Entra o surt diners del banc? Recorda la regla bàsica dels comptes d'actiu."
       },
       {
         "id": "o8",
@@ -1052,7 +1160,9 @@
           "No es veu afectada"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o9",
@@ -1071,7 +1181,9 @@
           "És un ingrés del grup 7"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o10",
@@ -1090,7 +1202,9 @@
           "No es veu afectada"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o11",
@@ -1109,7 +1223,9 @@
           "No es registra fins al pagament"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o12",
@@ -1128,7 +1244,9 @@
           "Es considera un actiu"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o13",
@@ -1147,7 +1265,9 @@
           "Augmenta el seu saldo (Haver)"
         ],
         "answer": 1,
-        "points": 30
+        "points": 30,
+        "hint": "Al cobrar, ¿se cancela o se crea un derecho de cobro? ¿Qué movimiento implica esto?",
+        "hintCA": "En cobrar, es cancel·la o es crea un dret de cobrament? Quin moviment implica això?"
       },
       {
         "id": "o14",
@@ -1166,7 +1286,9 @@
           "Disminueix el deute (Haver)"
         ],
         "answer": 1,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o15",
@@ -1185,7 +1307,9 @@
           "És una despesa del grup 6"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "¿Aumenta o disminuye el gasto? Observa que es una cuenta del grupo 6.",
+        "hintCA": "Augmenta o disminueix la despesa? Observa que és un compte del grup 6."
       },
       {
         "id": "o16",
@@ -1204,7 +1328,9 @@
           "És un ingrés del grup 7"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "o17",
@@ -1223,7 +1349,9 @@
           "No es veu afectada fins que es consumeix"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o18",
@@ -1242,7 +1370,9 @@
           "És un passiu amb Hisenda"
         ],
         "answer": 0,
-        "points": 30
+        "points": 30,
+        "hint": "¿Aumenta o disminuye el gasto? Observa que es una cuenta del grupo 6.",
+        "hintCA": "Augmenta o disminueix la despesa? Observa que és un compte del grup 6."
       },
       {
         "id": "o19",
@@ -1261,7 +1391,9 @@
           "Augmenta el deute (Deure)"
         ],
         "answer": 1,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       },
       {
         "id": "o20",
@@ -1280,7 +1412,9 @@
           "És una despesa financera"
         ],
         "answer": 2,
-        "points": 30
+        "points": 30,
+        "hint": "Identifica si la operación aumenta o disminuye la cuenta. Luego aplica su naturaleza.",
+        "hintCA": "Identifica si l'operació augmenta o disminueix el compte. Després aplica la seva naturalesa."
       }
     ],
     "3": [
@@ -1301,7 +1435,9 @@
           "Despesa per a l'empresa"
         ],
         "answer": 1,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "e2",
@@ -1320,7 +1456,9 @@
           "(631) Altres tributs"
         ],
         "answer": 1,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "e3",
@@ -1339,7 +1477,9 @@
           "La compra d'una màquina"
         ],
         "answer": 2,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "e4",
@@ -1358,7 +1498,9 @@
           "(112) Reserva Legal"
         ],
         "answer": 1,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "e5",
@@ -1377,7 +1519,9 @@
           "S'han de pagar dividends"
         ],
         "answer": 1,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       },
       {
         "id": "e6",
@@ -1396,7 +1540,9 @@
           "Una despesa de personal"
         ],
         "answer": 1,
-        "points": 50
+        "points": 50,
+        "hint": "",
+        "hintCA": ""
       }
     ]
   }

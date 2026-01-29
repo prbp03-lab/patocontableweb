@@ -75,6 +75,7 @@ export default {
         selectLevel: 'Selecciona tu Nivel',
         question: 'Pregunta',
         next: 'Siguiente Pregunta',
+        hint: 'Pista',
         difficulty: {
             easy: 'Conceptos Básicos',
             medium: 'Dinámica Contable',

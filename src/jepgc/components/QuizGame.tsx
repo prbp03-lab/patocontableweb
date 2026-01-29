@@ -103,6 +103,7 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
     const questionText = isCatalan && currentQ.textCA ? currentQ.textCA : currentQ.text;
     const questionOptions = isCatalan && currentQ.optionsCA ? currentQ.optionsCA : currentQ.options;
     const explanationText = isCatalan && currentQ.explanationCA ? currentQ.explanationCA : currentQ.explanation;
+    const hintText = isCatalan && currentQ.hintCA ? currentQ.hintCA : currentQ.hint;
 
     return (
         <div className="game-active">
@@ -130,6 +131,7 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                 correctAnswer={currentQ.correctAnswer}
                 onSelectOption={handleSelectOption}
                 disabled={selectedOption !== null}
+                hint={hintText}
             />
 
             {showExplanation && (
