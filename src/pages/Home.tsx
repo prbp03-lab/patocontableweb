@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                         <div className="hero-visual">
                             <div className="hero-icon">
                                 <img
-                                    src="/img/img-pato(3).webp"
+                                    src="/img/logo-pato-nuevo.webp"
                                     alt="PatoContable"
                                     className="hero-pato-img"
                                     fetchPriority="high"
