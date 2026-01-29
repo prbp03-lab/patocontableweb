@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import pgcData from '../../data/pgc-data';
 import { PGCAccount } from '../../types';
@@ -10,11 +11,29 @@ interface PGCDatabaseProps {
 
 const PGCDatabase: React.FC<PGCDatabaseProps> = ({ onAccountSelect }) => {
     const { t, i18n } = useTranslation();
+    const [searchParams, setSearchParams] = useSearchParams();
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedGroup, setSelectedGroup] = useState<number | 'all'>('all');
     const [selectedNature, setSelectedNature] = useState<string>('all');
     const [selectedStatement, setSelectedStatement] = useState<string>('all');
     const [selectedAccount, setSelectedAccount] = useState<PGCAccount | null>(null);
+
+    // Handle URL parameter for direct account access (from quiz links)
+    useEffect(() => {
+        const accountCode = searchParams.get('account');
+        if (accountCode) {
+            // Find the account in the database
+            const account = pgcData.find(acc => acc.code === accountCode);
+            if (account) {
+                // Open the account modal
+                setSelectedAccount(account);
+                // Optionally set search query to highlight the account
+                setSearchQuery(accountCode);
+            }
+            // Remove the parameter from URL to clean it up
+            setSearchParams({});
+        }
+    }, [searchParams, setSearchParams]);
 
     // Filter accounts based on search and filters
     const filteredAccounts = useMemo(() => {

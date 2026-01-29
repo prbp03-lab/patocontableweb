@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './QuestionCard.css';
+import AccountCodeLink from './AccountCodeLink';
+import AccountModal from './AccountModal';
 
 interface QuestionCardProps {
     question: string;
@@ -20,9 +22,21 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     disabled,
     hint
 }) => {
+    const [selectedAccountCode, setSelectedAccountCode] = useState<string | null>(null);
+
+    const handleAccountClick = (accountCode: string) => {
+        setSelectedAccountCode(accountCode);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedAccountCode(null);
+    };
+
     return (
         <div className="question-card">
-            <h3 className="question-text">{question}</h3>
+            <h3 className="question-text">
+                <AccountCodeLink text={question} onAccountClick={handleAccountClick} />
+            </h3>
             <div className="options-grid">
                 {options.map((option, index) => {
                     let statusClass = '';
@@ -50,6 +64,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
                     <span className="hint-icon">💡</span>
                     <span className="hint-text">{hint}</span>
                 </div>
+            )}
+
+            {selectedAccountCode && (
+                <AccountModal
+                    accountCode={selectedAccountCode}
+                    onClose={handleCloseModal}
+                />
             )}
         </div>
     );

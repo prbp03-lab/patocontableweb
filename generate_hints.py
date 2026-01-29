@@ -74,9 +74,45 @@ def generate_hint_for_question(question):
             hints['hintCA'] = "El termini de venciment és superior o inferior a un any? Això determina el grup."
         
         else:
-            # Generic hint for Level 1
-            hints['hint'] = "Revisa la estructura básica del PGC y la función de cada grupo contable."
-            hints['hintCA'] = "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+            # More specific hints based on account code and question content
+            if account_code:
+                first_digit = account_code[0]
+                
+                # Group-specific hints
+                if first_digit == '1':
+                    hints['hint'] = "El Grupo 1 contiene cuentas de financiación básica y patrimonio neto. ¿Qué tipo de cuenta es esta?"
+                    hints['hintCA'] = "El Grup 1 conté comptes de finançament bàsic i patrimoni net. Quin tipus de compte és aquest?"
+                elif first_digit == '2':
+                    hints['hint'] = "El Grupo 2 incluye activos no corrientes (inmovilizado). ¿Esta cuenta representa un bien duradero?"
+                    hints['hintCA'] = "El Grup 2 inclou actius no corrents (immobilitzat). Aquest compte representa un bé durador?"
+                elif first_digit == '3':
+                    hints['hint'] = "El Grupo 3 contiene existencias. ¿Esta cuenta representa bienes destinados a la venta?"
+                    hints['hintCA'] = "El Grup 3 conté existències. Aquest compte representa béns destinats a la venda?"
+                elif first_digit == '4':
+                    hints['hint'] = "El Grupo 4 incluye acreedores y deudores. ¿Esta cuenta representa un derecho u obligación a corto plazo?"
+                    hints['hintCA'] = "El Grup 4 inclou creditors i deutors. Aquest compte representa un dret o obligació a curt termini?"
+                elif first_digit == '5':
+                    hints['hint'] = "El Grupo 5 contiene cuentas financieras. ¿Esta cuenta representa dinero o deudas a corto plazo?"
+                    hints['hintCA'] = "El Grup 5 conté comptes financers. Aquest compte representa diners o deutes a curt termini?"
+                elif first_digit == '6':
+                    hints['hint'] = "El Grupo 6 incluye compras y gastos. ¿Esta cuenta reduce el beneficio de la empresa?"
+                    hints['hintCA'] = "El Grup 6 inclou compres i despeses. Aquest compte redueix el benefici de l'empresa?"
+                elif first_digit == '7':
+                    hints['hint'] = "El Grupo 7 contiene ventas e ingresos. ¿Esta cuenta aumenta el beneficio de la empresa?"
+                    hints['hintCA'] = "El Grup 7 conté vendes i ingressos. Aquest compte augmenta el benefici de l'empresa?"
+                else:
+                    hints['hint'] = "Observa el primer dígito del código contable. Cada grupo tiene una función específica en el PGC."
+                    hints['hintCA'] = "Observa el primer dígit del codi comptable. Cada grup té una funció específica al PGC."
+            elif 'representa' in text.lower() or 'qué es' in text.lower():
+                hints['hint'] = "Piensa en la naturaleza económica de esta cuenta: ¿es un bien, un derecho, una obligación, un gasto o un ingreso?"
+                hints['hintCA'] = "Pensa en la naturalesa econòmica d'aquest compte: és un bé, un dret, una obligació, una despesa o un ingrés?"
+            elif 'clasifica' in text.lower() or 'dónde' in text.lower():
+                hints['hint'] = "Analiza las características de la cuenta. ¿Es algo que la empresa posee, debe, gasta o ingresa?"
+                hints['hintCA'] = "Analitza les característiques del compte. És alguna cosa que l'empresa posseeix, deu, gasta o ingressa?"
+            else:
+                # Last resort generic hint
+                hints['hint'] = "Revisa la estructura básica del PGC y la función de cada grupo contable."
+                hints['hintCA'] = "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
     
     # Level 2 (Senior) - Accounting dynamics
     elif q_id.startswith('m') or q_id.startswith('o'):

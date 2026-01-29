@@ -172,8 +172,8 @@
         ],
         "answer": 0,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 4 incluye acreedores y deudores. ¿Esta cuenta representa un derecho u obligación a corto plazo?",
+        "hintCA": "El Grup 4 inclou creditors i deutors. Aquest compte representa un dret o obligació a curt termini?"
       },
       {
         "id": "f9",
@@ -193,8 +193,8 @@
         ],
         "answer": 1,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "Analiza las características de la cuenta. ¿Es algo que la empresa posee, debe, gasta o ingresa?",
+        "hintCA": "Analitza les característiques del compte. És alguna cosa que l'empresa posseeix, deu, gasta o ingressa?"
       },
       {
         "id": "f10",
@@ -277,8 +277,8 @@
         ],
         "answer": 1,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 2 incluye activos no corrientes (inmovilizado). ¿Esta cuenta representa un bien duradero?",
+        "hintCA": "El Grup 2 inclou actius no corrents (immobilitzat). Aquest compte representa un bé durador?"
       },
       {
         "id": "n4",
@@ -361,8 +361,8 @@
         ],
         "answer": 2,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 6 incluye compras y gastos. ¿Esta cuenta reduce el beneficio de la empresa?",
+        "hintCA": "El Grup 6 inclou compres i despeses. Aquest compte redueix el benefici de l'empresa?"
       },
       {
         "id": "n8",
@@ -403,8 +403,8 @@
         ],
         "answer": 1,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "Piensa en la naturaleza económica de esta cuenta: ¿es un bien, un derecho, una obligación, un gasto o un ingreso?",
+        "hintCA": "Pensa en la naturalesa econòmica d'aquest compte: és un bé, un dret, una obligació, una despesa o un ingrés?"
       },
       {
         "id": "n10",
@@ -466,8 +466,8 @@
         ],
         "answer": 1,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 2 incluye activos no corrientes (inmovilizado). ¿Esta cuenta representa un bien duradero?",
+        "hintCA": "El Grup 2 inclou actius no corrents (immobilitzat). Aquest compte representa un bé durador?"
       },
       {
         "id": "n13",
@@ -529,8 +529,8 @@
         ],
         "answer": 1,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 5 contiene cuentas financieras. ¿Esta cuenta representa dinero o deudas a corto plazo?",
+        "hintCA": "El Grup 5 conté comptes financers. Aquest compte representa diners o deutes a curt termini?"
       },
       {
         "id": "n16",
@@ -613,8 +613,8 @@
         ],
         "answer": 2,
         "points": 20,
-        "hint": "Revisa la estructura básica del PGC y la función de cada grupo contable.",
-        "hintCA": "Revisa l'estructura bàsica del PGC i la funció de cada grup comptable."
+        "hint": "El Grupo 4 incluye acreedores y deudores. ¿Esta cuenta representa un derecho u obligación a corto plazo?",
+        "hintCA": "El Grup 4 inclou creditors i deutors. Aquest compte representa un dret o obligació a curt termini?"
       },
       {
         "id": "n20",
