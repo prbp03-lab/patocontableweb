@@ -24,7 +24,7 @@ const LegalNotice: React.FC = () => {
                                 <li><strong>{t('legal.notice.id.owner_label')}:</strong> Patricia Rocio Bustos Paco</li>
                                 <li><strong>{t('legal.notice.id.name_label')}:</strong> Pato Contable</li>
                                 <li><strong>{t('legal.notice.id.address_label')}:</strong> Barcelona-Granollers, España</li>
-                                <li><strong>{t('legal.notice.id.email_label')}:</strong> patocontable@outlook.com</li>
+                                <li><strong>{t('legal.notice.id.email_label')}:</strong> <a href="mailto:patoscontables@gmail.com" className="legal-link">patoscontables@gmail.com</a></li>
                                 <li><strong>{t('legal.notice.id.web_label')}:</strong> www.patocontable.com</li>
                             </ul>
                         </section>

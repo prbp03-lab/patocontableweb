@@ -163,7 +163,7 @@ export default {
         },
         contact: {
             title: 'Contacta conmigo',
-            email: 'patocontable@outlook.com',
+            email: 'patoscontables@gmail.com',
             location: 'Granollers, 08402 • Barcelona',
             linkedin: 'LinkedIn',
         },
@@ -316,7 +316,7 @@ export default {
             },
             rights: {
                 title: 'Derechos',
-                content: 'Aunque no tratamos tus datos, puedes contactar con el titular en patocontable@outlook.com para cualquier duda sobre tu privacidad.',
+                content: 'Aunque no tratamos tus datos, puedes contactar con el titular en patoscontables@gmail.com para cualquier duda sobre tu privacidad.',
             },
         },
         cookies: {

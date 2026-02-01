@@ -24,7 +24,11 @@ const Footer: React.FC = () => {
 
                 <div className="footer-section">
                     <h4 className="footer-title">{t('about.contact.title')}</h4>
-                    <p className="footer-text">{t('about.contact.email')}</p>
+                    <p className="footer-text">
+                        <a href={`mailto:${t('about.contact.email')}`} className="footer-link">
+                            {t('about.contact.email')}
+                        </a>
+                    </p>
                     <p className="footer-text">{t('footer.location')}</p>
                     <a
                         href="https://www.linkedin.com/in/patricia-bustos-paco/"
