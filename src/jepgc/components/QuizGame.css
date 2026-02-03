@@ -28,6 +28,26 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .level-grid {
+        max-width: 1000px;
+        gap: 2rem;
+    }
+
+    .level-card {
+        padding: 4rem 2.5rem;
+    }
+
+    .level-img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .level-name {
+        font-size: 1.75rem;
+    }
+}
+
 .level-card {
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid rgba(255, 255, 255, 0.1);
