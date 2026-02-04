@@ -72,7 +72,7 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                 <div className="level-grid">
                     <button className="level-card junior" onClick={() => startLevel(Level.JUNIOR)}>
                         <span className="level-icon">
-                            <img src="/img/logo-pato-nuevo.webp" alt="Junior" className="level-img" />
+                            <img src="/img/img-contable.webp" alt="Junior" className="level-img" />
                         </span>
                         <span className="level-name">Junior</span>
                         <span className="level-desc">{t('game.difficulty.easy')}</span>
@@ -86,7 +86,7 @@ const QuizGame: React.FC<QuizGameProps> = ({ onFinish, onCancel }) => {
                     </button>
                     <button className="level-card executive" onClick={() => startLevel(Level.EXECUTIVE)}>
                         <span className="level-icon">
-                            <img src="/img/logo-pato-nuevo.webp" alt="Executive" className="level-img" />
+                            <img src="/img/img-pato.webp" alt="Executive" className="level-img" />
                         </span>
                         <span className="level-name">Executive</span>
                         <span className="level-desc">{t('game.difficulty.hard')}</span>
