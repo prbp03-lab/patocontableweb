@@ -30,10 +30,12 @@
     color: var(--text-color);
     text-decoration: none;
     transition: transform var(--transition-base);
+    cursor: pointer;
 }
 
 .logo:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .logo-icon {
