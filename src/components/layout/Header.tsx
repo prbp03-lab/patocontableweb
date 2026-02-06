@@ -18,10 +18,15 @@ const Header: React.FC = () => {
 
     const isActive = (path: string) => location.pathname === path;
 
+    const handleLogoClick = () => {
+        // Dispatch custom event to reset game state
+        window.dispatchEvent(new Event('resetGameState'));
+    };
+
     return (
         <header className="header">
             <div className="container header-content">
-                <Link to="/" className="logo">
+                <Link to="/" className="logo" onClick={handleLogoClick}>
                     <span className="logo-icon">
                         <img
                             src="/img/logo-pato-nuevo.webp"

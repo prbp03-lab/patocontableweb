@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import QuizGame from '../jepgc/components/QuizGame';
 import ResultsScreen from '../jepgc/components/ResultsScreen';
@@ -8,6 +8,7 @@ import './Home.css';
 
 const Home: React.FC = () => {
     const { t } = useTranslation();
+    const location = useLocation();
     const [gameState, setGameState] = useState<'landing' | 'playing' | 'results'>('landing');
     const [lastScore, setLastScore] = useState({ score: 0, correct: 0 });
 
@@ -27,6 +28,20 @@ const Home: React.FC = () => {
     const handleExit = () => {
         setGameState('landing');
     };
+
+    // Reset game state when user clicks logo to go home
+    useEffect(() => {
+        const handleResetGame = () => {
+            setGameState('landing');
+        };
+
+        // Listen for custom event from Header
+        window.addEventListener('resetGameState', handleResetGame);
+
+        return () => {
+            window.removeEventListener('resetGameState', handleResetGame);
+        };
+    }, []);
 
     if (gameState === 'playing') {
         return (
