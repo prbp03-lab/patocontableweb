@@ -108,16 +108,6 @@
     letter-spacing: 0.1em;
 }
 
-/* Mobile fix for Junior level image */
-@media (max-width: 768px) {
-    .level-card.junior .level-img {
-        object-fit: contain !important;
-        background: white !important;
-        padding: 0.4rem !important;
-        width: 5.5rem !important;
-        height: 5.5rem !important;
-    }
-}
 
 
 .game-active {
