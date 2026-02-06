@@ -99,7 +99,7 @@ export default {
         title: 'Sobre Mi',
         badge: 'Experta en IA Comptable',
         subtitle: 'Administrativa Comptable & Especialista en IA',
-        description: 'Sóc una professional administrativa amb més de 15 anys d\'experiència en gestió comptable i atenció al client. Especialitzada en sistemes ERP (SAGE, SAP, Dynamics 365) i IA.',
+        description: 'Administrativa Comptable especialitzada en l\'automatització i optimització de processos financers. Com a creadora de PatoContable.com, he desenvolupat una plataforma que integra IA i gamificació per simplificar el PGC. Combino el meu domini d\'ERPs (Dynamics 365, Sage 200) amb habilitats de desenvolupament digital per eliminar errors manuals i transformar la gestió financera en un avantatge competitiu.',
         downloadCV: 'Descarregar CV',
         cvLink: '/img/CV_Patricia_CA.pdf',
         experience: {
@@ -147,7 +147,7 @@ export default {
         },
         skills: {
             title: 'Competències',
-            items: ['SAGE 200', 'SAP Business One', 'Dynamics 365', 'IA & Prompting', 'Fiscalitat', 'Comptabilitat'],
+            items: ['SAGE 200', 'Dynamics 365', 'IA & Prompting', 'Fiscalidad', 'Comptabilitat'],
         },
         languages: {
             title: 'Idiomes',
