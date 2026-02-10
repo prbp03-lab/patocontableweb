@@ -12,6 +12,9 @@
     font-family: inherit;
     transition: all 0.2s ease;
     display: inline;
+    pointer-events: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .account-code-link:hover {
