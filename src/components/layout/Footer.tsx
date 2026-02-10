@@ -39,6 +39,15 @@ const Footer: React.FC = () => {
                         <span className="material-symbols-outlined">link</span>
                         {t('about.contact.linkedin')}
                     </a>
+                    <a
+                        href="https://www.instagram.com/patocontable/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="footer-link"
+                    >
+                        <span className="material-symbols-outlined">link</span>
+                        Instagram
+                    </a>
                 </div>
 
                 <div className="footer-section">
