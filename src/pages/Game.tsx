@@ -257,8 +257,13 @@ const Game: React.FC = () => {
                 {/* Journal Panel */}
                 <motion.div
                     className={`journal-panel ${journalOpen ? 'open' : ''}`}
-                    initial={{ x: 300, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
+                    initial={false}
+                    animate={{
+                        x: window.innerWidth > 767 ? 0 : 0,
+                        y: window.innerWidth > 767 ? 0 : (journalOpen ? 0 : '100%'),
+                        opacity: 1
+                    }}
+                    transition={{ type: 'spring', damping: 25, stiffness: 200 }}
                 >
                     <div className="journal-header">
                         LIBRO DIARIO

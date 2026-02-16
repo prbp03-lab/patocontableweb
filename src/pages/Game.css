@@ -433,7 +433,7 @@
   }
 
   .journal-panel.open {
-    transform: translateY(0);
+    /* Handled by Framer Motion in Game.tsx */
   }
 
   .journal-close {
