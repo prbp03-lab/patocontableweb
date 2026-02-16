@@ -100,13 +100,29 @@ const Home: React.FC = () => {
                                 {t('home.description')}
                             </p>
 
-                            <div className="hero-actions animate-fade-in">
-                                <button className="btn-primary btn-large" onClick={handleStartGame}>
-                                    {t('home.playButton')}
-                                </button>
-                                <Link to="/game-info" className="btn-outline btn-large">
-                                    {t('home.learnMore')}
-                                </Link>
+                            <div className="game-selection animate-fade-in">
+                                <h2 className="game-selection-title">{t('home.games.title')}</h2>
+                                <div className="game-cards">
+                                    {/* Quiz PGC */}
+                                    <div className="game-card" onClick={handleStartGame}>
+                                        <h3 className="game-card-title">{t('home.games.quiz.title')}</h3>
+                                        <p className="game-card-description">{t('home.games.quiz.description')}</p>
+                                        <button className="game-card-button">
+                                            <span className="button-icon">🎮</span>
+                                            {t('home.games.quiz.button')}
+                                        </button>
+                                    </div>
+
+                                    {/* Paco Contador */}
+                                    <Link to="/paco-contador" className="game-card">
+                                        <h3 className="game-card-title">{t('home.games.pacoContador.title')}</h3>
+                                        <p className="game-card-description">{t('home.games.pacoContador.description')}</p>
+                                        <button className="game-card-button">
+                                            <span className="button-icon">🎮</span>
+                                            {t('home.games.pacoContador.button')}
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
 

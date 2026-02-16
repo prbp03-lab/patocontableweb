@@ -49,6 +49,19 @@ export default {
         description: 'Domina la contabilidad española de forma interactiva y divertida. Practica con casos reales, desafía tus conocimientos y conviértete en un experto del PGC.',
         playButton: '🎮 ¡Jugar Ahora!',
         learnMore: 'Más Información',
+        games: {
+            title: 'Elige tu Juego',
+            quiz: {
+                title: 'Quiz PGC',
+                description: 'Pon a prueba tus conocimientos del Plan General Contable',
+                button: 'Jugar Quiz'
+            },
+            pacoContador: {
+                title: 'Paco Contador',
+                description: 'Aprende contabilidad de forma divertida con Paco',
+                button: 'Jugar con Paco Contador'
+            }
+        },
         features: {
             title: 'Características del Juego',
             interactive: {

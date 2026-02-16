@@ -97,5 +97,45 @@ export const LEVELS: Level[] = [
     pacoMessage: '¡El Búho Auditor ha llegado! Demuestra que eres el mejor contable.',
     concept: 'Cierre del Ejercicio Completo',
     isMixed: true
+  },
+  {
+    id: 9,
+    title: 'Proveedores',
+    instruction: 'Paga a los proveedores del pantano.',
+    targetAmount: 7.35,
+    allowedCoins: [2, 1, 0.5, 0.2, 0.1, 0.05],
+    pacoMessage: '¡Cuac! Debemos pagar a nuestros proveedores. Necesitamos exactamente 7.35€.',
+    concept: 'Gestión de Proveedores y Pagos',
+    isMixed: true
+  },
+  {
+    id: 10,
+    title: 'Clientes Morosos',
+    instruction: 'Cobra las deudas pendientes.',
+    targetAmount: 5.65,
+    allowedCoins: [2, 1, 0.5, 0.2, 0.1, 0.05],
+    pacoMessage: 'La Tortuga nos debe dinero desde hace meses. ¡Hay que cobrar 5.65€!',
+    concept: 'Cobro de Clientes y Deudas',
+    isMixed: true
+  },
+  {
+    id: 11,
+    title: 'Amortización',
+    instruction: 'Calcula la depreciación de los activos.',
+    targetAmount: 8.90,
+    allowedCoins: [2, 1, 0.5, 0.2, 0.1],
+    pacoMessage: '¡Cuac! Las herramientas se desgastan. Calcula la amortización: 8.90€.',
+    concept: 'Amortización y Depreciación',
+    isMixed: true
+  },
+  {
+    id: 12,
+    title: 'Gran Maestro Contable',
+    instruction: 'El desafío definitivo del contador.',
+    targetAmount: 15.75,
+    allowedCoins: [2, 1, 0.5, 0.2, 0.1, 0.05],
+    pacoMessage: '¡El desafío final! Demuestra que eres un Gran Maestro Contable. ¡15.75€!',
+    concept: 'Maestría Contable Completa',
+    isMixed: true
   }
 ];

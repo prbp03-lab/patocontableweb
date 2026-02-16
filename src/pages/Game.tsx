@@ -29,61 +29,38 @@ const Game: React.FC = () => {
         initLevel(currentLevelIdx);
     }, [currentLevelIdx]);
 
+    // Spawn new coin continuously
+    useEffect(() => {
+        if (pacoState === 'happy' || pacoState === 'error') return;
+
+        const spawnInterval = setInterval(() => {
+            const level = LEVELS[currentLevelIdx];
+            const randomVal = level.allowedCoins[Math.floor(Math.random() * level.allowedCoins.length)];
+            const side = level.isMixed && Math.random() > 0.5 ? 'haber' : 'debe';
+
+            const newCoin: Coin = {
+                id: `coin-${Date.now()}-${Math.random()}`,
+                value: randomVal,
+                x: 10 + Math.random() * 80,
+                y: -10,
+                side: side
+            };
+
+            setTableCoins(prev => [...prev, newCoin]);
+
+            // Remove coin after it falls off screen
+            setTimeout(() => {
+                setTableCoins(prev => prev.filter(c => c.id !== newCoin.id));
+            }, 9000);
+        }, 1000); // Spawn a new coin every 1000ms
+
+        return () => clearInterval(spawnInterval);
+    }, [currentLevelIdx, pacoState]);
+
     const initLevel = (idx: number) => {
         const level = LEVELS[idx];
-        let newCoins: Coin[] = [];
 
-        // Force coins to reach the exact targetAmount
-        let remaining = level.targetAmount;
-        const sortedAllowed = [...level.allowedCoins].sort((a, b) => b - a);
-
-        while (remaining > 0.005) {
-            const coinVal = sortedAllowed.find(v => v <= Number((remaining + 0.005).toFixed(2))) || sortedAllowed[sortedAllowed.length - 1];
-            newCoins.push({
-                id: `coin-target-${Math.random()}`,
-                value: coinVal,
-                x: 0, y: 0,
-                side: 'debe'
-            });
-            remaining = Number((remaining - coinVal).toFixed(2));
-        }
-
-        // Add noise or neutral pairs for mixed levels
-        const minCoins = level.id === 4 ? 14 : 10;
-        while (newCoins.length < minCoins) {
-            const randomVal = level.allowedCoins[Math.floor(Math.random() * level.allowedCoins.length)];
-            if (level.isMixed) {
-                const pairId = Math.random();
-                newCoins.push({
-                    id: `coin-plus-${pairId}`,
-                    value: randomVal,
-                    x: 0, y: 0,
-                    side: 'debe'
-                });
-                newCoins.push({
-                    id: `coin-minus-${pairId}`,
-                    value: randomVal,
-                    x: 0, y: 0,
-                    side: 'haber'
-                });
-            } else {
-                newCoins.push({
-                    id: `coin-extra-${Math.random()}`,
-                    value: randomVal,
-                    x: 0, y: 0,
-                    side: 'debe'
-                });
-            }
-        }
-
-        // Randomize positions and shuffle
-        newCoins = newCoins.map(c => ({
-            ...c,
-            x: 15 + Math.random() * 70,
-            y: 35 + Math.random() * 45
-        })).sort(() => Math.random() - 0.5);
-
-        setTableCoins(newCoins);
+        setTableCoins([]);
         setCurrentBalance(0);
 
         // Seed journal with initial debt/target in Haber
@@ -100,6 +77,24 @@ const Game: React.FC = () => {
     };
 
     const handleCoinClick = (coin: Coin) => {
+        // Play cash register sound
+        const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+        const oscillator = audioContext.createOscillator();
+        const gainNode = audioContext.createGain();
+
+        oscillator.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        // Cash register "cha-ching" sound
+        oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+        oscillator.frequency.exponentialRampToValueAtTime(1200, audioContext.currentTime + 0.1);
+
+        gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.2);
+
+        oscillator.start(audioContext.currentTime);
+        oscillator.stop(audioContext.currentTime + 0.2);
+
         setTableCoins(prev => prev.filter(c => c.id !== coin.id));
 
         const valueChange = coin.side === 'debe' ? coin.value : -coin.value;
@@ -178,8 +173,9 @@ const Game: React.FC = () => {
                     <motion.div
                         initial={{ x: -50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
+                        key={currentLevel.id}
+                        className="game-concept-container-top"
                     >
-                        <h1 className="game-title">{currentLevel.title}</h1>
                         <p className="game-concept">{currentLevel.concept}</p>
                     </motion.div>
 
@@ -196,27 +192,46 @@ const Game: React.FC = () => {
                 {/* Main Table Area */}
                 <div className="table-area">
                     <AnimatePresence>
-                        {tableCoins.map(coin => (
-                            <motion.div
-                                key={coin.id}
-                                className={`coin-element ${coin.side}`}
-                                initial={{ scale: 0, opacity: 0, rotate: -180 }}
-                                animate={{ scale: 1, opacity: 1, left: `${coin.x}%`, top: `${coin.y}%`, rotate: 0 }}
-                                exit={{ scale: 1.5, opacity: 0, filter: 'blur(10px)' }}
-                                onClick={() => handleCoinClick(coin)}
-                                style={{ position: 'absolute' }}
-                                whileHover={{ scale: 1.15, rotate: 15, boxShadow: '0 10px 20px rgba(0,0,0,0.4)' }}
-                                whileTap={{ scale: 0.9 }}
-                            >
-                                {coin.value < 1 ? `${(coin.value * 100).toFixed(0)}c` : `${coin.value}€`}
-                            </motion.div>
-                        ))}
+                        {tableCoins.map((coin) => {
+
+                            return (
+                                <motion.div
+                                    key={coin.id}
+                                    className={`coin-element ${coin.side}`}
+                                    initial={{
+                                        scale: 0.5,
+                                        opacity: 0,
+                                        rotate: -180,
+                                        left: `${coin.x}%`,
+                                        top: `${coin.y}%`
+                                    }}
+                                    animate={{
+                                        scale: 1,
+                                        opacity: 1,
+                                        left: `${coin.x}%`,
+                                        top: '110%',
+                                        rotate: 360
+                                    }}
+                                    transition={{
+                                        duration: 8,
+                                        ease: 'linear'
+                                    }}
+                                    exit={{ scale: 0, opacity: 0 }}
+                                    onClick={() => handleCoinClick(coin)}
+                                    style={{ position: 'absolute' }}
+                                    whileHover={{ scale: 1.2, boxShadow: '0 10px 20px rgba(0,0,0,0.4)' }}
+                                    whileTap={{ scale: 0.8 }}
+                                >
+                                    {coin.value < 1 ? `${(coin.value * 100).toFixed(0)}c` : `${coin.value}€`}
+                                </motion.div>
+                            );
+                        })}
                     </AnimatePresence>
                 </div>
 
                 {/* Paco and Speech Bubble */}
                 <motion.img
-                    src="/img/logo-pato-nuevo.webp"
+                    src="/img/img-pato.webp"
                     alt="Paco el Pato"
                     className="paco-duck"
                     animate={{
