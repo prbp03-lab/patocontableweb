@@ -69,29 +69,14 @@ const PGCDatabase: React.FC<PGCDatabaseProps> = ({ onAccountSelect }) => {
         return i18n.language === 'ca' && account.descriptionCA ? account.descriptionCA : account.description;
     };
 
-    const handleExportCSV = () => {
-        const headers = [
-            t('tools.pgc.table.code'),
-            t('tools.pgc.table.name'),
-            t('tools.pgc.table.nature'),
-            t('tools.pgc.table.group'),
-            t('tools.pgc.table.statement')
-        ];
+    const handleDownloadPDF = () => {
+        const fileName = i18n.language === 'ca'
+            ? 'Pla_General_Comptabilitat.pdf'
+            : 'Plan_General_Contabilidad.pdf';
 
-        const csvRows = filteredAccounts.map(account => [
-            account.code,
-            `"${getAccountName(account)}"`,
-            t(`tools.pgc.nature.${account.nature.toLowerCase()}`),
-            `"${t(`tools.pgc.groups.${account.group}`)}"`,
-            t(`tools.pgc.statement.${account.financialStatement.toLowerCase()}`)
-        ].join(','));
-
-        const csvContent = [headers.join(','), ...csvRows].join('\n');
-        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-        const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
-        link.setAttribute('href', url);
-        link.setAttribute('download', `PGC_Export_${i18n.language.toUpperCase()}_${new Date().toISOString().split('T')[0]}.csv`);
+        link.href = `/img/${fileName}`;
+        link.setAttribute('download', fileName);
         link.style.visibility = 'hidden';
         document.body.appendChild(link);
         link.click();
@@ -166,7 +151,7 @@ const PGCDatabase: React.FC<PGCDatabaseProps> = ({ onAccountSelect }) => {
                     {filteredAccounts.length} {filteredAccounts.length === 1 ? 'cuenta encontrada' : 'cuentas encontradas'}
                 </p>
                 {filteredAccounts.length > 0 && (
-                    <button className="export-button" onClick={handleExportCSV}>
+                    <button className="export-button" onClick={handleDownloadPDF}>
                         <span className="material-symbols-outlined">download</span>
                         {t('tools.pgc.export')}
                     </button>

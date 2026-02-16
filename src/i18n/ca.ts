@@ -233,7 +233,7 @@ export default {
                 debe: 'Deu',
                 haber: 'Haver',
             },
-            export: 'Exportar',
+            export: 'Descarregar PGC',
             noResults: 'No s\'han trobat resultats',
         },
         calendar: {
