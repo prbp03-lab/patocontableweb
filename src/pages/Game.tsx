@@ -22,6 +22,14 @@ const Game: React.FC = () => {
     const [feedbacks, setFeedbacks] = useState<{ id: string; text: string; x: number; y: number; side: string }[]>([]);
     const [journal, setJournal] = useState<JournalEntry[]>([]);
     const [journalOpen, setJournalOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 767);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
 
     const currentLevel = LEVELS[currentLevelIdx];
 
@@ -257,13 +265,13 @@ const Game: React.FC = () => {
                 {/* Journal Panel */}
                 <motion.div
                     className={`journal-panel ${journalOpen ? 'open' : ''}`}
-                    initial={false}
+                    initial={isMobile ? { y: '100%', opacity: 1 } : { x: 300, opacity: 0 }}
                     animate={{
-                        x: window.innerWidth > 767 ? 0 : 0,
-                        y: window.innerWidth > 767 ? 0 : (journalOpen ? 0 : '100%'),
+                        x: isMobile ? 0 : 0,
+                        y: isMobile ? (journalOpen ? 0 : '100%') : 0,
                         opacity: 1
                     }}
-                    transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+                    transition={{ type: 'spring', damping: 30, stiffness: 250 }}
                 >
                     <div className="journal-header">
                         LIBRO DIARIO
