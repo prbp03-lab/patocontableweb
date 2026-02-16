@@ -1,0 +1,101 @@
+export type CurrencyValue = 0.01 | 0.02 | 0.05 | 0.1 | 0.2 | 0.5 | 1 | 2;
+
+export interface Coin {
+  id: string;
+  value: CurrencyValue;
+  x: number;
+  y: number;
+  side: 'debe' | 'haber';
+}
+
+export interface Level {
+  id: number;
+  title: string;
+  instruction: string;
+  targetAmount: number;
+  allowedCoins: CurrencyValue[];
+  pacoMessage: string;
+  concept: string;
+  isMixed?: boolean;
+}
+
+export const LEVELS: Level[] = [
+  {
+    id: 1,
+    title: 'El Efectivo',
+    instruction: 'Recoge las monedas exactas de la mesa.',
+    targetAmount: 3,
+    allowedCoins: [1, 2],
+    pacoMessage: '¡Cuac! La nutria nos debe 3.00€ por el alquiler del nido. ¿Puedes contar el dinero?',
+    concept: 'Contar monedas de 1€ y 2€'
+  },
+  {
+    id: 2,
+    title: 'Los Céntimos',
+    instruction: 'Suma los decimales para llegar al total.',
+    targetAmount: 0.70,
+    allowedCoins: [0.5, 0.2, 0.1, 0.05],
+    pacoMessage: '¡Interesante! Algunos clientes pagan con calderilla. Necesitamos 0.70€.',
+    concept: 'Introducción de decimales'
+  },
+  {
+    id: 3,
+    title: 'Activo vs. Pasivo',
+    instruction: 'Identifica los ingresos y gastos.',
+    targetAmount: 5.00,
+    allowedCoins: [1, 2, 0.5],
+    pacoMessage: '¡Cuidado! Ese gasto es un pasivo, resta de tu caja. Separa las ganancias.',
+    concept: 'Diferenciar Ingresos (+) de Gastos (-)',
+    isMixed: true
+  },
+  {
+    id: 4,
+    title: 'El Balance',
+    instruction: 'Calcula el saldo neto del día.',
+    targetAmount: 2.50,
+    allowedCoins: [1, 0.5, 0.2, 0.1],
+    pacoMessage: '¿Hemos ganado o perdido hoy? Calcula el saldo final.',
+    concept: 'Ingresos - Gastos = Saldo',
+    isMixed: true
+  },
+  {
+    id: 5,
+    title: 'El Préstamo',
+    instruction: 'Devuelve el dinero prestado con intereses.',
+    targetAmount: 4.20,
+    allowedCoins: [2, 1, 0.5, 0.1, 0.05],
+    pacoMessage: '¡Cuac! La Ardilla nos prestó avellanas. Hay que devolver 4.20€.',
+    concept: 'Devolución de Préstamos (Intereses)',
+    isMixed: true
+  },
+  {
+    id: 6,
+    title: 'Inmovilizado',
+    instruction: 'Paga las nuevas herramientas del pantano.',
+    targetAmount: 6.50,
+    allowedCoins: [2, 1, 0.5],
+    pacoMessage: 'El Castor ha traído herramientas nuevas. La factura es de 6.50€.',
+    concept: 'Compra de Inmovilizado / Herramientas',
+    isMixed: true
+  },
+  {
+    id: 7,
+    title: 'El Inventario',
+    instruction: 'Gestiona el stock de algas del almacén.',
+    targetAmount: 3.80,
+    allowedCoins: [1, 0.5, 0.2, 0.1],
+    pacoMessage: '¡Cuidado! El Erizo dice que falta stock. Hay que cuadrar 3.80€.',
+    concept: 'Gestión de Existencias e Inventario',
+    isMixed: true
+  },
+  {
+    id: 8,
+    title: 'Auditoría Final',
+    instruction: 'Supera la gran prueba del sabio Búho.',
+    targetAmount: 10.00,
+    allowedCoins: [2, 1, 0.5, 0.2],
+    pacoMessage: '¡El Búho Auditor ha llegado! Demuestra que eres el mejor contable.',
+    concept: 'Cierre del Ejercicio Completo',
+    isMixed: true
+  }
+];
