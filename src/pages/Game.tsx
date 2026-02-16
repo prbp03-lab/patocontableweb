@@ -55,7 +55,7 @@ const Game: React.FC = () => {
             const newCoin: Coin = {
                 id: `coin-${Date.now()}-${Math.random()}`,
                 value: randomVal,
-                x: 10 + Math.random() * 80,
+                x: 45 + Math.random() * 45,
                 y: -10,
                 side: side
             };
