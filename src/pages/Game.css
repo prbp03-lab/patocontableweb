@@ -381,11 +381,17 @@
   }
 
   .speech-bubble {
-    bottom: 250px;
-    left: 30px;
-    max-width: 220px;
-    font-size: 0.9rem;
-    padding: 16px;
+    bottom: 220px;
+    /* Repositioned closer to the duck */
+    left: 20px;
+    max-width: 200px;
+    /* Slightly narrower */
+    font-size: 0.85rem;
+    /* More compact font */
+    padding: 12px 16px;
+    /* Reduced padding */
+    line-height: 1.4;
+    /* More compact lines */
   }
 
   .speech-bubble::after {
@@ -416,8 +422,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    max-height: 70vh;
-    border-radius: 24px 24px 0 0;
+    max-height: 50vh;
+    /* Reduced from 70vh to save game space */
+    border-radius: 20px 20px 0 0;
     transform: translateY(100%);
     transition: transform 0.3s ease;
   }
@@ -436,7 +443,8 @@
 
   .journal-table th,
   .journal-table td {
-    padding: 8px;
+    padding: 6px 8px;
+    /* More compact rows */
   }
 
   .journal-footer {
