@@ -267,7 +267,7 @@ const Game: React.FC = () => {
                             onClick={() => setJournalOpen(false)}
                             aria-label="Close journal"
                         >
-                            <span className="material-symbols-outlined">close</span>
+                            <span className="material-symbols-outlined">remove</span>
                         </button>
                     </div>
                     <div className="journal-table-container">
