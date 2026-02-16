@@ -148,7 +148,7 @@ const PGCDatabase: React.FC<PGCDatabaseProps> = ({ onAccountSelect }) => {
             {/* Results Count and Export */}
             <div className="results-info">
                 <p className="results-count">
-                    {filteredAccounts.length} {filteredAccounts.length === 1 ? 'cuenta encontrada' : 'cuentas encontradas'}
+                    {t('tools.pgc.downloadInfo')}
                 </p>
                 {filteredAccounts.length > 0 && (
                     <button className="export-button" onClick={handleDownloadPDF}>

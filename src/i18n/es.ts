@@ -234,6 +234,7 @@ export default {
                 haber: 'Haber',
             },
             export: 'Descargar PGC',
+            downloadInfo: 'Descarga el Plan General Contable',
             noResults: 'No se encontraron resultados',
         },
         calendar: {

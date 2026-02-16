@@ -234,6 +234,7 @@ export default {
                 haber: 'Haver',
             },
             export: 'Descarregar PGC',
+            downloadInfo: 'Descarrega el Pla General Comptable',
             noResults: 'No s\'han trobat resultats',
         },
         calendar: {
