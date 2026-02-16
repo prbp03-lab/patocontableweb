@@ -199,8 +199,8 @@ const Game: React.FC = () => {
                                     key={coin.id}
                                     className={`coin-element ${coin.side}`}
                                     initial={{
-                                        scale: 0.5,
-                                        opacity: 0,
+                                        scale: 1,
+                                        opacity: 1,
                                         rotate: -180,
                                         left: `${coin.x}%`,
                                         top: `${coin.y}%`
