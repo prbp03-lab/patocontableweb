@@ -21,7 +21,7 @@ const Game: React.FC = () => {
     const [message, setMessage] = useState('');
     const [feedbacks, setFeedbacks] = useState<{ id: string; text: string; x: number; y: number; side: string }[]>([]);
     const [journal, setJournal] = useState<JournalEntry[]>([]);
-    const [journalOpen, setJournalOpen] = useState(false);
+    const [journalOpen, setJournalOpen] = useState(true);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
 
     useEffect(() => {
